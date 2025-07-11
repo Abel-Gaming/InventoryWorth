@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "inventoryworth",
+	"version": "${version}",
+	"name": "Inventory Worth",
+	"description": "Inventory worth calculator for JailBreak MC designed for 1.19.4",
+	"authors": [
+		"Abel Gaming"
+	],
+	"contact": {
+		"homepage": "https://github.com/Abel-Gaming",
+		"sources": "https://github.com/Abel-Gaming/InventoryWorth"
+	},
+	"license": "MIT",
+	"icon": "assets/inventoryworth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.abelgaming.inventoryworth.InventoryWorth"
+		],
+		"fabric-datagen": [
+			"com.abelgaming.inventoryworth.InventoryWorthDataGenerator"
+		],
+		"client": [
+			"com.abelgaming.inventoryworth.InventoryWorthClient"
+		]
+	},
+	"mixins": [
+		"inventoryworth.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
